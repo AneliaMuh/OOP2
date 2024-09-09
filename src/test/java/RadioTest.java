@@ -178,5 +178,15 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
 
     }
+// Тест на возможность задать количество радиостанций
+    @Test
+    public void numberRadioStations() {
+        Radio rad = new Radio(20);
+        rad.setCurrentRadioStationNumber(8);
+        int expected = 8;
+        int actual = rad.getCurrentRadioStationNumber();
+        Assertions.assertEquals(expected,actual);
+    }
+
 
 }
